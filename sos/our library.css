@@ -1,0 +1,501 @@
+/* Import Makalo Font and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Makalo&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+@font-face {
+    font-family: 'Makalo';
+    src: url('fonts/makalo-20336765/MAKALOCLEAN\ Regular.otf') format('woff2'),
+        url('fonts/makalo-20336765/MAKALO\ Regular.ttf') format('woff');
+}
+/* General Styles */
+body {
+    font-family: 'Makalo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#743A17;
+    columns: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 1rem 3rem;*/
+    background-color: #000000;
+    color: #ffffff;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 80px; /* Adjust as needed */
+    width: 80px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32.66px;
+    color: #ffffff;
+}
+
+.navbar ul li {
+    margin: 0 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    /*transition: color 0.3s;*/
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+   /* padding: 7rem 2rem;*/
+    background-color: #743A17;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 84px;
+    height: 84px;
+}
+
+.hero p {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 24px;
+    margin-bottom: 3rem;
+    line-height: 32.66px;
+    color: #ffffff;
+    opacity: 70%;
+    font-weight: 400;
+}
+
+.hero .image-container img {
+   /* max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin: 3rem 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);*/
+    width: 1125px;
+    height: 222px;
+    object-fit: cover;
+}
+
+.hero .btn {
+    padding: 10px;
+    gap: 10px;
+    width: 184px;
+    height: 53px;
+    background-color: #EF8B34;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+    line-height: 32.66px;
+    font-family: 'Alegreya', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #000000;
+}
+
+/* Stories Section */
+.stories {
+    padding: 5rem 3rem;
+    background-color: #000000;
+    color: #333333;
+}
+
+.stories h2 {
+    text-align: left;
+    font-size: 70px;
+    line-height: 84px;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration-line: underline;
+    width: 216px;
+    height: 84px;
+    top: 820px;
+    left: 100px;
+}
+
+.story {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 3rem;
+    color: #ffffff;
+}
+
+.story .number {
+    font-family: 'makalo', serif;
+    font-size: 250px;
+    font-weight: 400;
+    color: #1E1E1E;
+    margin-right: 2rem;
+    /*flex: 0 0 auto;*/
+    line-height: 300px;
+    width: 220px;
+    height: 338px;
+    top: 937px;
+    left: 100px;
+}
+
+.story .text {
+    flex: 2;
+    padding-right: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    align-items: start;
+}
+
+.story .text h3, 
+.story .text p {
+    margin: 0; /* Reset default margins */
+}
+.story .text h3 {
+    font-size: 70px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 84px;
+    width: 239px;
+    height: 252px;
+    top: 960px;
+    left: 317px;
+}
+
+
+.highlight {
+    color: #EF8B34; /* Orange color for "Lagos" and "Story" */
+}
+
+h3 {
+    color: #1E1E1E; /* White color for the rest of the text */
+}
+
+
+.highlight-black {
+    color: #1E1E1E;  /* Set this color for "War" and "UA" */
+}
+
+.highlight-white {
+    color: #FFFFFF;  /* Set this color for "Against" and "The" */
+}
+
+
+
+.story .text p {
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+    line-height: 32.66px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    opacity: 70%;
+    width: 314px;
+    height: 264px;
+    top: 24.5px;
+}
+
+.story .text a {
+    color: #EF8B34;
+    font-style: italic;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 24px;
+    line-height: 32.66px;
+    text-decoration: underline;
+}
+
+.story .text a:hover {
+    color: #333333;
+}
+
+.story .image {
+    flex: 1;
+}
+
+.story .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4rem 3rem;
+    text-align: left;
+}
+
+.footer-content p {
+    font-family: 'Alegreya', serif;
+    margin-bottom: 1.5rem;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 70%;
+    width: 275px;
+    height: 252px;
+    top: 41px;
+    left: 100px;
+}
+
+.subscribe {
+    margin-top: 2rem;
+    text-align: right;
+    margin-left: 80%;
+}
+
+.subscribe p {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 29.26px;
+    width: 275px;
+    height: 58px;
+
+}
+h4{
+font-family:'Alegreya', serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 24.5px;
+width: 119px;
+height: 24px;
+top: 116px;
+margin-left: 10%;
+}
+.social-links a {
+    margin: 0 1.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff9800;
+}
+
+
+.logo img {
+    width: auto;
+    height: 80px; /* Adjust as needed */
+    width: 80px;
+}
+
+    .hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+  /* Mobile View (smaller screens) */
+@media (max-width: 768px) {
+    .main-container {
+    flex-direction: column;
+    padding: 2rem;
+    }
+
+    .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    }
+
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    }
+
+    .navbar.active ul {
+    display: flex;
+    }
+
+    .hamburger-menu {
+    display: block;
+    }
+}
+
+.connect {
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.connect p {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.connect .line {
+    width: 20%;
+    height: 1px;
+    background-color: #fff;
+    margin: 0.5rem 0;
+    margin-left: 79%;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-left: 89%;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff; /* White icons */
+    font-size: 1.5rem; /* Icon size */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    top: 186px;
+    left: 152px;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive Enhancements */
+
+/* Extra Small Devices (Phones, Portrait) */
+@media (max-width: 576px) {
+    /* Navbar adjustments */
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Close spacing for menu items */
+    }
+
+    .navbar ul li {
+        margin: 0; /* Remove excess margin */
+    }
+
+    /* Story section adjustments */
+    .story .text {
+        display: block; /* Stack h3 and p vertically */
+    }
+
+    .story .text h3 {
+        margin-bottom: 1rem; /* Add spacing between h3 and p */
+    }
+}
+
+/* Small Devices (Tablets, Landscape) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar ul {
+        justify-content: center;
+        gap: 1rem; /* Adjust spacing for better alignment */
+    }
+
+    .navbar ul li {
+        margin: 0; /* Reduce excess margin */
+    }
+
+    /* Story section adjustments */
+    .story .text {
+        display: block; /* Stack h3 and p vertically */
+    }
+
+    .story .text h3 {
+        margin-bottom: 1rem; /* Add spacing between h3 and p */
+    }
+}
+
+
+
+
+/* Navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Keep menu hidden by default */
+        flex-direction: column;
+        width: 100%; /* Full-width menu */
+        background-color: #333; /* Ensure visibility on toggle */
+        position: absolute;
+        top: 50px; /* Position just below the navbar */
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .navbar.active ul {
+        display: flex; /* Show menu when active class is added */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        cursor: pointer;
+        font-size: 2rem;
+        color: #ffffff; /* Ensure visibility */
+        z-index: 1100;
+    }
+}
+
+
+

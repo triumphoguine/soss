@@ -1,0 +1,649 @@
+/* Import Makalo Font and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Makalo&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+@font-face {
+  font-family: 'Makalo';
+  src: url('fonts/makalo-20336765/MAKALOCLEAN\ Regular.otf') format('woff2'),
+       url('fonts/Makalo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'makalo', sans-serif;
+  background-color: #743A17;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+/* Header and Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 1rem 3rem;*/
+  background-color: #000000;
+  color: #ffffff;
+ /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  height: 80px; /* Adjust as needed */
+  width: 80px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.66px;
+  color: #ffffff;
+}
+
+.navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  /*transition: color 0.3s;*/
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+  color: white;
+}
+
+/* Header Styling */
+/*header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative; 
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}*/
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Navigation Menu */
+/*nav ul {
+  font-family: 'Alegreya', serif;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.66px;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Connect Section */
+.connect {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.connect p {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.connect .line {
+  width: 15%;
+  height: 1px;
+  background-color: #fff;
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  color: #FFFFFF;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Main Container for Side-by-Side Layout */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+  padding-right: 10rem;
+  gap: 2rem;
+}
+
+/* Left Section: Welcome */
+.welcome {
+  flex: 1;
+  text-align: left;
+}
+
+.welcome h1 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 84px;
+}
+
+.welcome h2 {
+  font-size: 70px;
+  line-height: 84px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+ /* color: #444;*/
+ color: #fff;
+}
+
+h2 .logo {
+
+    width: 80px; /* Adjust the logo size */
+    height: auto; /* Maintain the aspect ratio */
+    /*margin-left: 10px; /* Space between the text and the logo */
+  }
+
+.welcome p {
+  font-family: 'Alegreya', serif;
+  font-size: 1.2rem;
+  /*color: #bbb;*/
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+/* Right Section: Cards */
+.cards {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+  font-family: 'Alegreya', serif ;
+}
+
+.card.red {
+  border-color: #EA3323;
+  background: #EA3323;
+}
+
+.card.orange {
+  border-color: #EF8B34;
+  background: #EF8B34;
+}
+
+.card h3 {
+  font-size: 18.2px;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24.78px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 400;
+  line-height: 14.45px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: url('/images/subscribe.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  margin-top: 3rem;
+  width: 1440px;
+  height: 477px;
+}
+
+.newsletter-content h2 {
+  font-size: 56px;
+  font-weight: 400px;
+  line-height: 67.2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 40px;
+}
+
+.newsletter-content p {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  font-family: 'Alegreya', serif;
+  opacity: 70%;
+  line-height: 32.66px;
+  font-weight: 400;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 588px;
+  margin: 0 auto;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Alegreya', serif;
+  font-weight:400 ;
+  font-size: 30px;
+  opacity: 60%;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #EF8B34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 53px;
+  width: 148px;
+  gap: 10px;
+}
+
+.newsletter-form button:hover {
+  background-color: #ea3323;
+}
+
+/* Footer Section */
+.footer-section {
+  background: #000;
+  color: #aaa;
+  padding: 40px 20px;
+  text-align: center;
+  width: auto;
+  height: 428px;
+  top: 2136px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text p {
+  width: 275px;
+  font-style: italic;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  height: 252px;
+  top: 41px;
+  left: 100px;
+  color: #FFFFFF;
+}
+
+.footer-links h4 {
+  margin: 0 0 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.26px;
+  letter-spacing: -1.5%;
+  color: #FFFFFF;
+  height: 58px;
+  width: 275px;
+}
+
+.footer-links .social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-links .social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-section p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.26px;
+  letter-spacing: -1.5%;
+}
+
+/* Mobile View (smaller screens) */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar.active ul {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+.logo img {
+  width: auto;
+  height: 80px; /* Adjust as needed */
+  width: 80px;
+}
+
+
+/* Initial CSS (Unchanged) */
+.newsletter-section {
+  background: url('https://s3-alpha-sig.figma.com/img/9cf8/c1c7/61f71eca42449e7b4290a4c29eed7cd5?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H9WXzo41SStRT3AxVz0J7kx1a9OPcbYe7FUhzOx7nM5HY~HvEwf0lDUMF994HN~aEk~ZvFH~k708lIoEoe6dcmKf-zhMj5sI-11fih-Bw0hPG1321Aaqhfdz0au0zSMKZi-XFDFcJUAhoLFOIWmxoTChOl2g~j-fZvJFpVxkp77EjgbMtVpCt-G2ke5MblA-oyFhXqHlCpQfmOtCA0VLxxYjSFm1eGMfXiyXllsjO6BXbmUAWo7L3m3C5ihbLRqDgYT7iVj4xFrsb31JSE3wUFB2h2szfqiOkDggtkcsax~yTGvSGeW1i4x6~mO-rbCZQuOGSa-volNGx-d9DK4qFg__') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  margin-top: 3rem;
+  width: 1440px;
+  height: 477px;
+}
+
+.newsletter-content h2 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 67.2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 40px;
+}
+
+.newsletter-content p {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  font-family: 'Alegreya', serif;
+  opacity: 70%;
+  line-height: 32.66px;
+  font-weight: 400;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 588px;
+  margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #EF8B34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 53px;
+  width: 148px;
+}
+
+.newsletter-form button:hover {
+  background-color: #ea3323;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .newsletter-section {
+    width: 100%; /* Scale section to full screen width */
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 40px 10px; /* Adjust padding */
+  }
+
+  .newsletter-form {
+    width: 90%; /* Scale form width for tablets */
+  }
+
+  .newsletter-content h2 {
+    font-size: 48px; /* Reduce font size for tablets */
+    line-height: 60px;
+  }
+
+  .newsletter-content p {
+    font-size: 20px; /* Slightly smaller text for better fit */
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter-section {
+    padding: 30px 10px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 36px; /* Smaller font for smaller screens */
+    line-height: 48px;
+  }
+
+  .newsletter-content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 15px; /* Add spacing between elements */
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 100%; /* Full width input */
+    font-size: 18px; /* Adjust text size for smaller screens */
+  }
+
+  .newsletter-form button {
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Adjust button text size */
+  }
+  .footer-content {
+    flex-direction: column; /* Stack footer items */
+    text-align: center;
+  }
+
+  .footer-text p {
+    font-size: 1rem;
+  }
+
+  .footer-links h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newsletter-content h2 {
+    font-size: 28px; /* Smaller font for mobile screens */
+    line-height: 38px;
+  }
+
+  .newsletter-content p {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 10px; /* Add padding for better spacing */
+  }
+
+  .newsletter-section {
+    padding: 20px 10px; /* Compact padding for mobile */
+  }
+
+  .newsletter-form {
+    width: 100%; /* Take up full width */
+    gap: 10px;
+  }
+
+  .newsletter-form input[type="email"] {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .newsletter-form button {
+    font-size: 14px; /* Adjust button text size */
+  }
+  .footer-text p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-links .social-links img {
+    width: 20px; /* Further reduce icon size */
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff; /* White icons */
+  font-size: 1.5rem; /* Icon size */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  top: 186px;
+  left: 152px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+
+

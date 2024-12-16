@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed of Soil</title>
+    <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Makalo&display=swap" rel="stylesheet">
+      
+</head>
+<body>
+    <!--<header>
+        <div class="left-header">
+            <a href="index.html" class="logo">
+              <img src="images/weblogo.png" alt="Your Logo">
+            </a>
+          </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Who we are</a></li>
+                <li><a href="our library.html">Our library</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> <!-- Hamburger icon --
+            </div>
+        </nav>
+    </header>-->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" class="logo">
+                    <img src="images/weblogo.png" alt="Your Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="hidden">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="abouts.html" style="text-decoration: underline solid white 2px;">Who we are</a></li>
+                    <li><a href="our library.html" class="active">Our library</a></li>
+                </ul>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    
+    <!-- Connect with us section --
+    <div class="connect">
+        <p>Connect with us</p>
+        <div class="line"></div> <!-- Line under Connect with us --
+        <div class="social-icons">
+            <!-- Social media links with their logos --
+            <a href="https://www.instagram.com" class="instagram">
+                <img src="/images/instagram logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" class="facebook">
+                <img src="images/facebook-3-logo-svgrepo-com.svg" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" class="tiktok">
+                <img src="images/tiktok-svgrepo-com.svg" alt="TikTok">
+            </a>
+        </div>
+    </div>-->
+    <div class="connect">
+        <p>Connect with us</p>
+        <div class="line"></div> <!-- Line under Connect with us -->
+        <div class="social-icons">
+            <!-- Social media links with FontAwesome icons -->
+            <a href="https://www.instagram.com" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com" class="tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+    
+    <main class="main-container">
+        <!-- Left Section: Welcome Text -->
+        <section class="welcome">
+            <h1>Welcome to the</h1>
+            <h2>seed of soil 
+                <img src="images/weblogo.png" alt="Logo" class="logo">
+
+            </h2>
+            <p>Immerse Yourself in the Vibrant World of West African History, Art, and Culture</p>
+        </section>
+
+        <!-- Right Section: Cards -->
+        <section class="cards">
+            <div class="card red">
+                <img src="images/card 1.png" alt="Know Thyself">
+                <div class="card-content">
+                    <h3>Know thyself</h3>
+                    <p>Immerse Yourself in the Vibrant World of West .......</p>
+                </div>
+            </div>
+            <div class="card orange">
+                <img src="images/card 2.png" alt="The Cold War of the Itsekiri">
+                <div class="card-content">
+                    <h3>The cold war of the itsekiri</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Sem elementum sagittis sed diam lacus pulvinar.</p>
+                </div>
+            </div>
+            <div class="card orange">
+                <img src="images/card 3.png" alt="Know Thyself">
+                <div class="card-content">
+                    <h3>Know thyself</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ex porro provident magnam culpa, illo consequatur, optio nam eaque asperiores ab deserunt. Deleniti odit quod rem qui, sapiente a maxime.</p>
+                </div>
+            </div>
+            <div class="card red">
+                <img src="images/card 4.png" alt="Queen Moremi">
+                <div class="card-content">
+                    <h3>Queen Moremi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, et? Earum odio blanditiis in illo fugit iusto dolores porro ab accusamus molestias eum qui, corrupti officiis ad nemo. Fugit, blanditiis?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <br>
+    <br>
+    <br><!-- Newsletter Section -->
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Have access to our latest updates on seeds of the soil.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>Lorem ipsum dolor sit amet consectetur.<br>Massa faucibus integer ipsum porttitor egestas sed in convallis vitae.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Subscribe to our newsletter</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="images/instagram logo.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="images/facebook-3-logo-svgrepo-com.svg" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="images/tiktok-svgrepo-com.svg" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+        <p>© COPYRIGHT - SOS 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
